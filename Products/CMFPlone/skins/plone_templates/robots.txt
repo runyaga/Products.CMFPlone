@@ -3,15 +3,11 @@ Sitemap: /sitemap.xml.gz
 # Define access-restrictions for robots/spiders
 # http://www.robotstxt.org/wc/norobots.html
 
-
-
-# By default we allow robots to access all areas of our site 
-# already accessible to anonymous users
+# By default we only disallow robots to crawl css & js
 
 User-agent: *
-Disallow:
-
-
+Disallow: /portal_javascripts
+Disallow: /portal_css
 
 # Add Googlebot-specific syntax extension to exclude forms 
 # that are repeated for each piece of content in the site 
